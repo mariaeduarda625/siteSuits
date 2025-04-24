@@ -1,0 +1,96 @@
+/*
+#373737 quase preto
+#555555 cinza escuro
+#818181 cinza medio
+#a1a1a1 cinza claro
+#c0c0c0 cinza clarinho
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+body{
+    background-color:#c0c0c0
+}
+
+header{
+    background-color:#373737 ;
+    color:#fff;
+    padding:15px 15px 15px 15px;
+    width: 100%;
+    top: 0;
+    position: fixed;
+    z-index: 1000;
+}
+
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo{
+    font-size: 2em;
+    font-weight:bold ;
+}
+
+nav ul{
+    list-style: none; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+nav ul li{
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+
+.banner{
+    background: url(../img/banner.jpeg) no-repeat center/cover;
+    height: 750px; 
+    display: flex;
+    margin-top: 106px;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 1.8em;
+    text-align: center;
+    text-shadow:4px 2px #000000;
+}
+
+
+
+@media(max-width:575px){
+    header .container{
+        flex-direction: column;
+        text-align: center;
+    }
+    nav ul{
+        margin-top: 10px;
+        flex-direction: column;
+    }
+
+    .banner{
+        margin-top: 120px;
+
+    }
+}
