@@ -21,12 +21,12 @@
 }
 
 body{
-    background-color:#c0c0c0
+    background-color:#555555 ;
 }
 
 header{
-    background-color:#373737 ;
-    color:#fff;
+    background-color:#373737;
+    color:#ffffff;
     padding:15px 15px 15px 15px;
     width: 100%;
     top: 0;
@@ -58,23 +58,75 @@ nav ul li{
 }
 
 nav ul li a {
-    color: #fff;
+    color: #ffffff;
     text-decoration: none;
 }
-
-
 
 .banner{
     background: url(../img/banner.jpeg) no-repeat center/cover;
     height: 750px; 
     display: flex;
     margin-top: 106px;
-    align-items: center;
+    align-items:center;
     justify-content: center;
     color: #ffffff;
     font-size: 1.8em;
-    text-align: center;
-    text-shadow:4px 2px #000000;
+    text-align: left;
+    text-shadow: 4px 2px  black;
+}
+
+
+#sobre{
+    padding: 35px;
+    background-color:#818181  ;
+    color: #fff;
+}
+
+.sobre-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    max-width: 1400px;
+    margin: auto;
+}
+
+.sobre-texto{
+    flex: 1;
+    padding: 20px;
+}
+
+.sobre-texto h1{
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+.sobre-texto p {
+    font-size: 1;
+    line-height: 1.5;
+}
+
+.hex-grid{
+    display: flex;
+    flex-wrap:wrap;
+    gap: 15px;
+    justify-content: center;
+    flex: 1;
+}
+
+.hex{
+    width: 140px;
+    height: 120px;
+    clip-path: polygon(50% 0%, 93% 25%, 93% 75%, 50% 100%, 7% 75%, 7% 25%);
+    overflow: hidden;
+    background-color:#a1a1a1 ;
+    position: relative;
+
+}
+
+.hex img{
+    width: 100%;
+
 }
 
 
